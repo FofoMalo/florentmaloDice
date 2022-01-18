@@ -21,12 +21,12 @@ let currentScore = 0;
 let scores = [0, 0];
 let activePlayer = 0;
 let gamePlaying = false;
-const images = ["../img_de/face-1.png",
-  "../img_de/face-2.png",
-  "../img_de/face-3.png",
-  "../img_de/face-4.png",
-  "../img_de/face-5.png",
-  "../img_de/face-6.png",];
+const images = ["./img_de/face-1.png",
+  "./img_de/face-2.png",
+  "./img_de/face-3.png",
+  "./img_de/face-4.png",
+  "./img_de/face-5.png",
+  "./img_de/face-6.png",];
 //console.log(images);
 init();
 let diceToRoll = document.querySelectorAll("img");
@@ -113,7 +113,7 @@ function nextPlayer()
   currentScore = 0
   document.getElementById('current-0').textContent = 0
   document.getElementById('current-1').textContent = 0;
-  
+
   document.querySelector('.player-0-panel').classList.toggle('active')
   document.querySelector('.player-1-panel').classList.toggle('active')
   //document.querySelector('.player-' + activePlayer + 'panel').classList.add('active');
